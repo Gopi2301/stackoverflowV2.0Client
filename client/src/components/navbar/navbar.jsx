@@ -4,10 +4,9 @@ import logo from "../../assets/logo.png";
 import "./navbar.css";
 import SearchIcon from "@mui/icons-material/Search";
 import Avatar from "../Avatar/Avatar";
-import Button from "../Button/Button";
 
 const Navbar = () => {
-  var User = null;
+  var User = 1;
   return (
     <nav>
       <div className="navbar">
@@ -36,7 +35,7 @@ const Navbar = () => {
             <Link to="/">
               <Avatar></Avatar>
             </Link>
-            <Button>Logout</Button>
+            <button>Logout</button>
           </>
         )}
       </div>
