@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="navbar">
-        <Link className="nav-item-nav-btn">
+        <Link className="nav-item-nav-logo">
           <img className="logo" src={logo} alt="logo" />
         </Link>
         <Link to="/" className="nav-item-nav-btn">
@@ -25,7 +25,7 @@ const Navbar = () => {
         </Link>
         <form>
           <input type="text" placeholder="Search...." />
-          <SearchIcon />
+          <SearchIcon className="searchIcon" />
         </form>
         {User === null ? (
           <Link to="/Auth" className="nav-item-nav-links">
