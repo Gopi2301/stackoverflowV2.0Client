@@ -6,11 +6,11 @@ import SearchIcon from "@mui/icons-material/Search";
 import Avatar from "../Avatar/Avatar";
 
 const Navbar = () => {
-  var User = 1;
+  var User = null;
   return (
     <nav>
       <div className="navbar">
-        <Link className="nav-item-nav-logo">
+        <Link to="/" className="nav-item-nav-logo">
           <img className="logo" src={logo} alt="logo" />
         </Link>
         <Link to="/" className="nav-item-nav-btn">
@@ -32,10 +32,17 @@ const Navbar = () => {
           </Link>
         ) : (
           <>
-            <Link to="/">
-              <Avatar></Avatar>
+            <Link style={{ textDecoration: "none" }} to="/User">
+              <Avatar
+                Children={"M"}
+                backgroundColor={"#009dff"}
+                px={"10px"}
+                py={"10px"}
+                borderRadius={"50%"}
+                color={"white"}
+              />
             </Link>
-            <button>Logout</button>
+            <button className="nav-item-nav-links">Logout</button>
           </>
         )}
       </div>
