@@ -1,10 +1,16 @@
 import React from "react";
-import Navbar from "../components/navbar/navbar";
-
+import LeftSideBar from "../components/LeftSideBar/LeftSideBar";
+import RightSideBar from "../components/RightSideBar/RightSideBar";
+import HomeMainBar from "../components/HomeMainBar/HomeMainBar";
+import "../../src/App.css";
 const Home = () => {
   return (
-    <div>
-      <Navbar />
+    <div className="home-container-1">
+      <LeftSideBar />
+      <div className="home-container-2">
+        <HomeMainBar />
+        <RightSideBar />
+      </div>
     </div>
   );
 };
