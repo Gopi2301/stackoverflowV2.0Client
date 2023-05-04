@@ -7,9 +7,25 @@
 
 }
 .side-nav-links{
-    height: auto;
-    max-width: 100%;
-    position: relative;
-    margin: 20px 0px;
-    padding: 20px;
+    text-decoration: none;
+    color :#3a3a3a;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    transition: 0.2s;
 }
+.side-nav-div{
+    padding: 10px;
+}
+.side-nav-links :hover{
+    color:rgb(232, 173, 72);
+}
+.active{
+    font-weight: bolder;
+    color:black;
+    background-color: rgb(225,225,225);
+    border-right: solid 3px #ef8236;
+
+}
+
