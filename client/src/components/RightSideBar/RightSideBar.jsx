@@ -8,7 +8,7 @@ const RightSideBar = () => {
     <div>
       <aside className="right-sidebar">
         <Widget />
-        <WidgetTags />
+        {/* <WidgetTags /> */}
       </aside>
     </div>
   );
